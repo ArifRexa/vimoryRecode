@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.banner-bg {
+  content: "";
+  position: absolute;
+  background: url("../images/wave4.svg") no-repeat center center/cover;
+  height: 800px;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/*================== NAVBAR Section ==================*/
+nav {
+  margin-top: 30px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+nav img {
+  width: 150px;
+  height: 55px;
+}
+
+nav ul.parent {
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul.parent li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+nav ul.parent li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+nav ul.parent li a .drop-down-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul.parent li a .drop-down-parent .drop-down {
+  width: 27px;
+  height: 27px;
+  margin-left: -3%;
+}
+
+nav ul.parent li a ul.child {
+  display: none;
+}
+
+.banner {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner .bannerTextContainer {
+  width: 50%;
+}
+
+.banner .bannerTextContainer .bannerText h1.heading {
+  font-size: 2.5em;
+}
+
+.banner .bannerTextContainer .bannerText p.heading-des {
+  font-size: 1.1em;
+}
+
+.banner .bannerTextContainer .cardContainer .mini-card-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner .bannerTextContainer .cardContainer .mini-card-parent button.store-btn {
+  background-color: black;
+  padding: 1.7%;
+  border: 0;
+  border-radius: 8px;
+  width: 35%;
+  height: 50%;
+  text-align: start;
+  margin-right: 4%;
+  cursor: pointer;
+}
+
+.banner .bannerTextContainer .cardContainer .mini-card-parent button.store-btn a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .bannerTab {
+  background: -webkit-gradient(linear, left top, right top, color-stop(17%, #3082de), to(#03558b));
+  background: linear-gradient(90deg, #3082de 17%, #03558b 100%);
+  border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%;
+  width: 380px;
+  height: 400px;
+}
+
+.banner .bannerTab img {
+  margin-left: 15%;
+}
+
+.video-container {
+  margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video-container .wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.video-container .content {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+.video-container .content .play img {
+  font-size: 50px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 25px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.video-container .content .play:hover {
+  color: red;
+}
+
+.markingContainer {
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.markingContainer .fetures-section {
+  margin-bottom: 100px;
+}
+
+.markingContainer .mainHeading {
+  font-size: 2.2em;
+}
+
+.markingContainer .slogan {
+  font-size: 1.1em;
+}
+
+.markingContainer .mainHeading, .markingContainer .slogan {
+  text-align: center;
+}
+
+.markingContainer .markingSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.markingContainer .markingSection .markingTabBG {
+  background-color: aqua;
+  border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%;
+}
+
+.markingContainer .markingSection .markingTabBG .tabcurl {
+  width: 350px;
+  height: 520px;
+  margin-top: -90px;
+}
+
+.markingContainer .markingSection .markingSectionMini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.markingContainer .markingSection .markingSectionMini .shareIcon1 {
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+.markingContainer .markingSection .markingSectionMini .shareIcon {
+  margin-top: 3px;
+  margin-right: 15px;
+}
+
+.markingContainer .markingSection .markingSectionMini .textAlignment1 {
+  text-align: right;
+  height: 80px;
+  width: 180px;
+}
+
+.markingContainer .markingSection .markingSectionMini .textAlignment1 h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.markingContainer .markingSection .markingSectionMini .textAlignment1 p {
+  font-size: 13px;
+}
+
+.markingContainer .markingSection .markingSectionMini .textAlignment2 {
+  text-align: left;
+  height: 80px;
+  width: 180px;
+}
+
+.markingContainer .markingSection .markingSectionMini .textAlignment2 h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.markingContainer .markingSection .markingSectionMini .textAlignment2 p {
+  font-size: 13px;
+}
+/*# sourceMappingURL=style.css.map */
