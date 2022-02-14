@@ -298,4 +298,127 @@ nav ul.parent li a ul.child {
 .markingContainer .markingSection .markingSectionMini .textAlignment2 p {
   font-size: 13px;
 }
+
+.pricing-section {
+  margin-top: 160px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 10000px;
+}
+
+.pricing-section .apple-logo {
+  display: block;
+  margin: auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-box-shadow: 14px 4px 20px 1px #e2dcdc;
+          box-shadow: 14px 4px 20px 1px #e2dcdc;
+  border-radius: 50%;
+}
+
+.pricing-section h1.pricing-heading {
+  text-align: center;
+  font-size: 2em;
+}
+
+.pricing-section p.pricing-des {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.pricing-section .apple-pricing-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card {
+  height: 860px;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 5px 10px 9px 3px #0000000d;
+          box-shadow: 5px 10px 9px 3px #0000000d;
+  border-radius: 80px 0px 80px 0px;
+  width: 550px;
+  margin-top: 80px;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading {
+  background: linear-gradient(45deg, #0171bd, #00ccff);
+  border-radius: 80px 0px 80px 0px;
+  height: 200px;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 55px;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan {
+  text-align: center;
+  color: white;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3 {
+  font-size: 1.5em;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1 {
+  font-size: 2em;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .card-content-container {
+  margin-left: 35px;
+  margin-top: 60px;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content .circle {
+  margin-left: 20px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+}
+
+.pricing-section .apple-pricing-card-container .pricing-card .plan-btn button {
+  height: 70px;
+  width: 280px;
+  font-size: 1.5em;
+  background-color: #0171bd;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=style.css.map */
