@@ -303,30 +303,27 @@ nav ul.parent li a ul.child {
   margin-top: 160px;
   margin-left: 7%;
   margin-right: 7%;
-  margin-bottom: 10000px;
 }
 
-.pricing-section .apple-logo {
+.pricing-section .apple-pricing-section .apple-logo, .pricing-section .android-pricing-section .apple-logo {
   display: block;
   margin: auto;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
   -webkit-box-shadow: 14px 4px 20px 1px #e2dcdc;
           box-shadow: 14px 4px 20px 1px #e2dcdc;
   border-radius: 50%;
 }
 
-.pricing-section h1.pricing-heading {
+.pricing-section .apple-pricing-section h1.pricing-heading, .pricing-section .android-pricing-section h1.pricing-heading {
   text-align: center;
   font-size: 2em;
 }
 
-.pricing-section p.pricing-des {
+.pricing-section .apple-pricing-section p.pricing-des, .pricing-section .android-pricing-section p.pricing-des {
   text-align: center;
   font-size: 1.2em;
 }
 
-.pricing-section .apple-pricing-card-container {
+.pricing-section .apple-pricing-section .apple-pricing-card-container, .pricing-section .apple-pricing-section .android-pricing-card-container, .pricing-section .android-pricing-section .apple-pricing-card-container, .pricing-section .android-pricing-section .android-pricing-card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +334,7 @@ nav ul.parent li a ul.child {
       flex-wrap: wrap;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card {
   height: 860px;
   background-color: #f7f7f7;
   -webkit-box-shadow: 5px 10px 9px 3px #0000000d;
@@ -347,7 +344,7 @@ nav ul.parent li a ul.child {
   margin-top: 80px;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,7 +353,7 @@ nav ul.parent li a ul.child {
           justify-content: center;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading {
   background: linear-gradient(45deg, #0171bd, #00ccff);
   border-radius: 80px 0px 80px 0px;
   height: 200px;
@@ -373,36 +370,36 @@ nav ul.parent li a ul.child {
   margin-top: 55px;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan {
   text-align: center;
   color: white;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3 {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3 {
   font-size: 1.5em;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1 {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1 {
   font-size: 2em;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .card-content-container {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .card-content-container, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .card-content-container, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .card-content-container, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .card-content-container {
   margin-left: 35px;
   margin-top: 60px;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content p {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content p, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .card-content-container .card-content p, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content p, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .card-content-container .card-content p {
   font-size: 1.5em;
   margin-bottom: 30px;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content .circle {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content .circle, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .card-content-container .card-content .circle, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .card-content-container .card-content .circle, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .card-content-container .card-content .circle {
   margin-left: 20px;
   margin-right: 15px;
   display: inline-block;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-btn {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-btn, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-btn, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-btn, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +409,7 @@ nav ul.parent li a ul.child {
   margin-top: 70px;
 }
 
-.pricing-section .apple-pricing-card-container .pricing-card .plan-btn button {
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-btn button, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-btn button, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-btn button, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-btn button {
   height: 70px;
   width: 280px;
   font-size: 1.5em;
@@ -420,5 +417,66 @@ nav ul.parent li a ul.child {
   color: white;
   border: 0;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.pricing-section .android-pricing-section {
+  margin-top: 80px;
+}
+
+.pricing-section .android-pricing-section .logo-container {
+  height: 100px;
+  width: 100px;
+}
+
+.pricing-section .android-pricing-section .android-pricing-card-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.try-now-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 10000px;
+}
+
+.try-now-container .slide-show-container {
+  width: 90%;
+  height: 170px;
+  border-radius: 110px 7px 110px 7px;
+  background: linear-gradient(45deg, #0171bd, #00ccff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.try-now-container .slide-show-container .slide-text {
+  color: white;
+  font-size: 1.3em;
+}
+
+.try-now-container .slide-show-container .try-now {
+  background-color: white;
+  color: black;
+  font-size: 1.3em;
+  width: 350px;
+  height: 65px;
+  border-radius: 30px 5px 30px 5px;
+  text-align: center;
+  padding-top: 12px;
 }
 /*# sourceMappingURL=style.css.map */

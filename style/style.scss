@@ -271,106 +271,164 @@ nav{
     margin-top: 160px;
     margin-left: 7%;
     margin-right: 7%;
-    margin-bottom: 10000px;
-    .apple-logo{
-        display: block;
-        margin: auto;
-        filter: grayscale(1);
-        box-shadow: 14px 4px 20px 1px rgb(226, 220, 220);
-        border-radius: 50%;
-    }
-    h1.pricing-heading{
-        text-align: center;
-        font-size: 2em;
-    }
-    p.pricing-des{
-        text-align: center;
-        font-size: 1.2em;
-    }
 
-    .apple-pricing-card-container{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .apple-pricing-section, .android-pricing-section{
 
-        .pricing-card{
-            height: 860px;
-            background-color: #f7f7f7;
-            box-shadow: 5px 10px 9px 3px #0000000d;
-            border-radius: 80px 0px 80px 0px;
-            width: 550px;
-            margin-top: 80px;
-            
-            .plan-heading-container{
-                display: flex;
-                justify-content: center;
+        .apple-logo{
+            display: block;
+            margin: auto;
+            // filter: grayscale(1);
+            box-shadow: 14px 4px 20px 1px rgb(226, 220, 220);
+            border-radius: 50%;
+        }
+        h1.pricing-heading{
+            text-align: center;
+            font-size: 2em;
+        }
+        p.pricing-des{
+            text-align: center;
+            font-size: 1.2em;
+        }
+    
+        .apple-pricing-card-container, .android-pricing-card-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+            .pricing-card{
+                height: 860px;
+                background-color: #f7f7f7;
+                box-shadow: 5px 10px 9px 3px #0000000d;
+                border-radius: 80px 0px 80px 0px;
+                width: 550px;
+                margin-top: 80px;
                 
-                .monthly-plan-heading{
-                    background: linear-gradient(45deg, #0171bd, rgb(0, 204, 255));
-                    border-radius: 80px 0px 80px 0px;
-                    height: 200px;
-                    width: 450px;
+                .plan-heading-container{
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    margin-top: 55px;
                     
-                    .monthly-plan{
-                        text-align: center;
-                        color: white;
-                        h3{
-                            font-size: 1.5em;
-        
-                        }
-                        h1{
-                            font-size: 2em;
-                        }
-                    }
-                }
-    
-            }
-            .card-content-container{
-                margin-left: 35px;
-                margin-top: 60px;
-    
-                .card-content{
-                    
-    
-    
-                    p{
-                        font-size: 1.5em;
-                        margin-bottom: 30px;
-                    }
-        
-                    .circle{
-                        margin-left: 20px;
-                        margin-right: 15px;
-                        display: inline-block;
-                    }
-                }
-    
-            }
-            .plan-btn{
-                display: flex;
-                justify-content: center;
-                margin-top: 70px;
-                 button{
-                     height: 70px;
-                     width: 280px;
-                     font-size: 1.5em;
-                     background-color: #0171bd;
-                     color: white;
-                     border: 0;
-                     border-radius: 8px;
-    
-                 }
-            }
-    
+                    .monthly-plan-heading{
+                        background: linear-gradient(45deg, #0171bd, rgb(0, 204, 255));
+                        border-radius: 80px 0px 80px 0px;
+                        height: 200px;
+                        width: 450px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 55px;
+                        
+                        .monthly-plan{
+                            text-align: center;
+                            color: white;
+                            h3{
+                                font-size: 1.5em;
             
-    
+                            }
+                            h1{
+                                font-size: 2em;
+                            }
+                        }
+                    }
+        
+                }
+                .card-content-container{
+                    margin-left: 35px;
+                    margin-top: 60px;
+        
+                    .card-content{
+                        
+        
+        
+                        p{
+                            font-size: 1.5em;
+                            margin-bottom: 30px;
+                        }
+            
+                        .circle{
+                            margin-left: 20px;
+                            margin-right: 15px;
+                            display: inline-block;
+                        }
+                    }
+        
+                }
+                .plan-btn{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 70px;
+                     button{
+                         height: 70px;
+                         width: 280px;
+                         font-size: 1.5em;
+                         background-color: #0171bd;
+                         color: white;
+                         border: 0;
+                         border-radius: 8px;
+                         cursor: pointer;
+        
+                     }
+                }
+        
+                
+        
+            }
         }
+
     }
 
+    .android-pricing-section{
+        margin-top: 80px;
+        .logo-container{
+            height: 100px;
+            width: 100px;
+        }
+
+        .android-pricing-card-container{
+            justify-content: center;
+        }
+
+
+
+    }
+
+}
+
+
+.try-now-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 10000px;
+    .slide-show-container{
+        width: 90%;
+        height: 170px;
+        border-radius: 110px 7px 110px 7px;
+        background: linear-gradient(45deg, #0171bd, rgb(0, 204, 255));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        .slide-text{
+            color: white;
+            font-size: 1.3em;
+            
+
+        }
+        .try-now{
+            background-color: white;
+            color: black;
+            font-size: 1.3em;
+            width: 350px;
+            height: 65px;
+            border-radius: 30px 5px 30px 5px;
+            text-align:center;
+            padding-top: 12px;
+
+
+        }
+    }
 }
 
 
