@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -109,7 +111,8 @@ nav ul.parent li a ul.child {
 }
 
 .banner .bannerTextContainer .bannerText h1.heading {
-  font-size: 2.5em;
+  font-size: 3.3em;
+  line-height: 60px;
 }
 
 .banner .bannerTextContainer .bannerText p.heading-des {
@@ -130,13 +133,13 @@ nav ul.parent li a ul.child {
 
 .banner .bannerTextContainer .cardContainer .mini-card-parent button.store-btn {
   background-color: black;
-  padding: 1.7%;
+  padding: 10px;
   border: 0;
   border-radius: 8px;
-  width: 35%;
-  height: 50%;
+  width: 235px;
+  height: 80px;
   text-align: start;
-  margin-right: 4%;
+  margin-right: 30px;
   cursor: pointer;
 }
 
@@ -146,24 +149,30 @@ nav ul.parent li a ul.child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.banner .bannerTextContainer .cardContainer .mini-card-parent button.store-btn a img {
+  margin-right: 10px;
+}
+
+.banner .bannerTextContainer .cardContainer .mini-card-parent button.store-btn a p {
+  font-size: 1.2em;
 }
 
 .banner .bannerTab {
   background: -webkit-gradient(linear, left top, right top, color-stop(17%, #3082de), to(#03558b));
   background: linear-gradient(90deg, #3082de 17%, #03558b 100%);
   border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%;
-  width: 380px;
-  height: 400px;
+  width: 480px;
+  height: 500px;
 }
 
 .banner .bannerTab img {
   margin-left: 15%;
+  margin-top: -40px;
 }
 
 .video-container {
@@ -219,11 +228,11 @@ nav ul.parent li a ul.child {
 }
 
 .markingContainer .mainHeading {
-  font-size: 2.2em;
+  font-size: 2.7em;
 }
 
 .markingContainer .slogan {
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 .markingContainer .mainHeading, .markingContainer .slogan {
@@ -241,62 +250,62 @@ nav ul.parent li a ul.child {
       flex-wrap: wrap;
 }
 
-.markingContainer .markingSection .markingTabBG {
-  background-color: aqua;
-  border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%;
+.markingContainer .markingSection .markingTabBG .loveshape {
+  content: "";
+  position: absolute;
+  /* height: 988px; */
+  top: 1713px;
+  left: 430px;
+  width: 490px;
+  opacity: 1;
+  z-index: -1;
 }
 
 .markingContainer .markingSection .markingTabBG .tabcurl {
-  width: 350px;
-  height: 520px;
+  width: 400px;
+  height: 650px;
   margin-top: -90px;
 }
 
-.markingContainer .markingSection .markingSectionMini {
+.markingContainer .markingSection .markingSectionMiniContainer {
+  margin-top: 50px;
+}
+
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
 }
 
-.markingContainer .markingSection .markingSectionMini .shareIcon1 {
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini .shareIcon1 {
   margin-top: 3px;
   margin-left: 15px;
 }
 
-.markingContainer .markingSection .markingSectionMini .shareIcon {
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini .shareIcon {
   margin-top: 3px;
   margin-right: 15px;
 }
 
-.markingContainer .markingSection .markingSectionMini .textAlignment1 {
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini .textAlignment1 {
   text-align: right;
-  height: 80px;
+  height: 100px;
   width: 180px;
 }
 
-.markingContainer .markingSection .markingSectionMini .textAlignment1 h1 {
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini .textAlignment1 p {
   font-size: 18px;
-  font-weight: bold;
 }
 
-.markingContainer .markingSection .markingSectionMini .textAlignment1 p {
-  font-size: 13px;
-}
-
-.markingContainer .markingSection .markingSectionMini .textAlignment2 {
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini .textAlignment2 {
   text-align: left;
-  height: 80px;
+  height: 100px;
   width: 180px;
 }
 
-.markingContainer .markingSection .markingSectionMini .textAlignment2 h1 {
+.markingContainer .markingSection .markingSectionMiniContainer .markingSectionMini .textAlignment2 p {
   font-size: 18px;
-  font-weight: bold;
-}
-
-.markingContainer .markingSection .markingSectionMini .textAlignment2 p {
-  font-size: 13px;
 }
 
 .pricing-section {
@@ -314,13 +323,14 @@ nav ul.parent li a ul.child {
 }
 
 .pricing-section .apple-pricing-section h1.pricing-heading, .pricing-section .android-pricing-section h1.pricing-heading {
+  margin-top: 25px;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.8em;
 }
 
 .pricing-section .apple-pricing-section p.pricing-des, .pricing-section .android-pricing-section p.pricing-des {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.9em;
 }
 
 .pricing-section .apple-pricing-section .apple-pricing-card-container, .pricing-section .apple-pricing-section .android-pricing-card-container, .pricing-section .android-pricing-section .apple-pricing-card-container, .pricing-section .android-pricing-section .android-pricing-card-container {
@@ -354,7 +364,7 @@ nav ul.parent li a ul.child {
 }
 
 .pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading {
-  background: linear-gradient(45deg, #0171bd, #00ccff);
+  background: linear-gradient(45deg, #0171bd, #00CCFF);
   border-radius: 80px 0px 80px 0px;
   height: 200px;
   width: 450px;
@@ -421,12 +431,17 @@ nav ul.parent li a ul.child {
 }
 
 .pricing-section .android-pricing-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .pricing-section .android-pricing-section .logo-container {
   height: 100px;
   width: 100px;
+}
+
+.pricing-section .android-pricing-section p.pricing-des {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .pricing-section .android-pricing-section .android-pricing-card-container {
@@ -442,8 +457,8 @@ nav ul.parent li a ul.child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 10000px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .try-now-container .slide-show-container {
@@ -478,5 +493,15 @@ nav ul.parent li a ul.child {
   border-radius: 30px 5px 30px 5px;
   text-align: center;
   padding-top: 12px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+footer img {
+  position: absolute;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */

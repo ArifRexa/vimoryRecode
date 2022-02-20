@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -94,7 +96,9 @@ nav{
         width: 50%;
         .bannerText{
             h1.heading{
-                font-size: 2.5em;
+                font-size:3.3em;
+                line-height: 60px;
+
             }
             p.heading-des{
                 font-size: 1.1em;
@@ -112,20 +116,26 @@ nav{
                     // display: flex;
                     // justify-content: space-between;
                     // align-items: center;
-                    padding: 1.7%;
+                    padding: 10px;
                     border: 0;
                     border-radius: 8px;
-                    width: 35%;
-                    height: 50%;
+                    width: 235px;
+                    height: 80px;
                     text-align: start;
-                    margin-right: 4%;
+                    margin-right: 30px;
                     cursor: pointer;
                     a{
                         text-decoration: none;
                         color: white;
                     display: flex;
-                    justify-content: space-between;
+                    // justify-content: space-between;
                     align-items: center;
+                    img{
+                        margin-right: 10px;
+                    }
+                    p{
+                        font-size: 1.2em;
+                    }
                     }
                 }
             }
@@ -135,10 +145,11 @@ nav{
         background: linear-gradient(90deg, rgba(48,130,222,1) 17%, rgba(3,85,139,1) 100%);
         border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%
         ;
-        width: 380px;
-        height: 400px;
+        width: 480px;
+        height: 500px;
         img{
             margin-left: 15%;
+            margin-top: -40px;
         }
     }
 }
@@ -195,10 +206,10 @@ nav{
         margin-bottom: 100px;
     }
     .mainHeading{
-        font-size: 2.2em;
+        font-size: 2.7em;
     }
     .slogan{
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .mainHeading, .slogan{
@@ -211,61 +222,69 @@ nav{
         flex-wrap: wrap;
 
         .markingTabBG{
-            background-color: aqua;
-            border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%
-        ;
+            .loveshape{
+    
+                content: "";
+                position: absolute;
+                /* height: 988px; */
+                top: 1713px;
+                left: 430px;
+                width: 490px;
+                opacity: 1;
+                z-index: -1;
+            }
+            
 
             .tabcurl{
-                width: 350px;
-                height: 520px;
+                width: 400px;
+                height: 650px;
                 margin-top: -90px;
             }
         }
 
-
-        .markingSectionMini{
-            display: flex;
-            margin-top: 30px;
-            
-            .shareIcon1{
-                margin-top: 3px;
-                margin-left: 15px;
-            }
-            .shareIcon{
-                margin-top: 3px;
-                margin-right: 15px;
-            }
-
-            .textAlignment1{
+        .markingSectionMiniContainer{
+            margin-top: 50px;
+            .markingSectionMini{
+                display: flex;
+                margin-top: 30px;
                 
-                text-align: right;
-                height: 80px;
-                width: 180px;
-                h1{
-                    font-size: 18px;
-                    font-weight: bold;
+                .shareIcon1{
+                    margin-top: 3px;
+                    margin-left: 15px;
                 }
-                p{
-                    font-size: 13px;
+                .shareIcon{
+                    margin-top: 3px;
+                    margin-right: 15px;
                 }
-            }
-            .textAlignment2{
-                
-                text-align: left;
-                height: 80px;
-                width: 180px;
-                h1{
-                    font-size: 18px;
-                    font-weight: bold;
+    
+                .textAlignment1{
+                    
+                    text-align: right;
+                    height: 100px;
+                    width: 180px;
+                    
+                    p{
+                        font-size: 18px;
+                    }
                 }
-                p{
-                    font-size: 13px;
+                .textAlignment2{
+                    
+                    text-align: left;
+                    height: 100px;
+                    width: 180px;
+                    
+                    p{
+                        font-size: 18px;
+                    }
+                    
                 }
-                
             }
         }
+
+
     }
 }
+
 
 .pricing-section{
     margin-top: 160px;
@@ -282,12 +301,13 @@ nav{
             border-radius: 50%;
         }
         h1.pricing-heading{
+            margin-top: 25px;
             text-align: center;
-            font-size: 2em;
+            font-size: 2.8em;
         }
         p.pricing-des{
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.9em;
         }
     
         .apple-pricing-card-container, .android-pricing-card-container{
@@ -308,7 +328,7 @@ nav{
                     justify-content: center;
                     
                     .monthly-plan-heading{
-                        background: linear-gradient(45deg, #0171bd, rgb(0, 204, 255));
+                        background: linear-gradient(45deg, #0171bd, #00CCFF);
                         border-radius: 80px 0px 80px 0px;
                         height: 200px;
                         width: 450px;
@@ -377,10 +397,15 @@ nav{
     }
 
     .android-pricing-section{
-        margin-top: 80px;
+        margin-top: 120px;
         .logo-container{
             height: 100px;
             width: 100px;
+        }
+
+        p.pricing-des{
+            text-align: center;
+            font-size: 1.5em;
         }
 
         .android-pricing-card-container{
@@ -397,8 +422,8 @@ nav{
 .try-now-container{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 10000px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     .slide-show-container{
         width: 90%;
         height: 170px;
@@ -432,4 +457,13 @@ nav{
 }
 
 
+footer{
+    margin: 0;
+    padding: 0;
+    img{
+        position: absolute;
+        margin-bottom: 100px;
+        // bottom: 10px;
 
+    }
+}
