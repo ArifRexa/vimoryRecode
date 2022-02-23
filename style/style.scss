@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@800&display=swap');
 
 *{
     margin: 0;
@@ -453,6 +453,157 @@ nav{
 
 
         }
+    }
+}
+
+.review-section{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 200px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+    .dashedContainer{
+        margin-left: 50px;
+        .dashed{
+            width: 250px;
+        }
+    }
+    .customerContainer{
+        width: 50%;
+        margin-top: -630px;
+        display: flex;
+        align-items: center;
+        line-height: 50px;
+
+        .cust{
+            width: 100px;
+            border-radius: 50%;
+        }
+        .id1{
+            margin-left: 220px;
+            margin-top: 25px;
+            
+        }
+        .id2{
+            margin-left: 70px;
+            margin-top: -30px;
+
+        }
+        .id3{
+            margin-left: 8px;
+            margin-top: 40px;
+
+        }
+        .id4{
+            margin-left: 40px;
+            margin-top: 50px;
+
+        }
+        .id5{
+            margin-left: 230px;
+            margin-top: -5px;
+
+        }
+        .id6{
+
+        }
+    }
+    .review{
+        width: 50%;
+        h1{
+            font-size: 2.3em;
+            font-weight:bolder;
+            margin-bottom: 30px;
+            // font-family: "";
+            width: 100%;
+        }
+        img{
+            margin-left: 20px;
+        }
+        .commentsContainer{
+            margin-top: -22px;
+            background-color: rgba(163, 148, 148, 0.089);
+            box-shadow: 5px 0px 8px 3px #0000000d;
+            border-radius: 10px;
+            color: #1e1e1e;
+            width: 90%;
+            height: 300px;
+            .comments1{
+                padding: 30px;
+                padding-top: 50px;
+                display: flex;
+                flex-direction: column;
+                // display: none;
+                .text{
+                    font-size: 1.5em;
+                    height: 180px;
+
+                }
+
+                .intro{
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #1e1e1e;
+                    font-size: 1.1em;
+                    .star{
+                        background-color: white;
+                        padding: 6px;
+                        border-radius: 12px 1px 12px 1px;
+                        width: 120px;
+                        box-shadow: 5px 0px 8px 3px #0000000d;
+    
+    
+                    }
+                }
+            }
+            .comments2, .comments3, .comments4, .comments5, .comments6{
+                padding: 30px;
+                padding-top: 50px;
+                display: flex;
+                flex-direction: column;
+                // font-size: 1.5em;
+                display: none;
+                .text{
+                    font-size: 1.5em;
+                    height: 180px;
+
+                }
+
+                .intro{
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #1e1e1e;
+                    font-size: 1.1em;
+                    .star{
+                        background-color: white;
+                        padding: 6px;
+                        border-radius: 12px 1px 12px 1px;
+                        width: 120px;
+                        box-shadow: 5px 0px 8px 3px #0000000d;
+    
+    
+                    }
+                }
+            }
+            
+        }
+    }
+    .active{
+        
+        background: linear-gradient(45deg, #0171bd, rgb(0, 204, 255));
+        border: 10px solid aqua;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to left, #0171bd, rgb(0, 204, 255));
+        border-radius: 50%;
+
+
     }
 }
 

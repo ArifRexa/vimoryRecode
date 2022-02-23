@@ -24,13 +24,52 @@ $().ready(() => {
     });
 
 
-    function afterText() {
-        var txt1 = "<b>I </b>";           // Create element with HTML
-        var txt2 = $("<i></i>").text("love ");  // Create with jQuery
-        var txt3 = document.createElement("b");   // Create with DOM
-        txt3.innerHTML = "jQuery!";
-        $("img").after(txt1, txt2, txt3);    // Insert new elements after img
-      }
+    
+    $('.id1').click(function () {
+        $(this).addClass('active')
+        $('.comments2, .comments3, .comments4, .comments5, .comments6').hide()
+        $('.comments1').show()
+        $('.id2, .id3, .id4, .id5, .id6').removeClass('active')
+          
+    })
+    $('.id2').click(function () {
+        $(this).addClass('active')
+        $('.comments1, .comments3, .comments4, .comments5, .comments6').hide()
+        $('.comments2').show()
+        $('.id1, .id3, .id4, .id5, .id6').removeClass('active')
+         
+    })
+    $('.id3').click(function () {
+        $(this).addClass('active')
+        $('.comments1, .comments2, .comments4, .comments5, .comments6').hide()
+        $('.comments3').show()
+        $('.id2, .id1, .id4, .id5, .id6').removeClass('active')
+        
+    })
+    $('.id4').click(function () {
+        $(this).addClass('active')
+        $('.comments1, .comments2, .comments3, .comments5, .comments6').hide()
+        $('.comments4').show()
+        $('.id2, .id3, .id5, .id6').removeClass('active')
+         
+    })
+    $('.id5').click(function () {
+        $(this).addClass('active')
+        $('.comments1, .comments3, .comments4, .comments2, .comments6').hide()
+        $('.comments5').show()
+        $('.id2, .id1, .id3, .id4, .id6').removeClass('active')
+        
+    })
+    $('.id6').click(function () {
+        $(this).addClass('active')
+        $('.comments1, .comments3, .comments4, .comments5, .comments2').hide()
+        $('.comments6').show()
+        $('.id1, .id2, .id3, .id4, .id5').removeClass('active')
+        
+    })
+
+
+    
 
 
 })
