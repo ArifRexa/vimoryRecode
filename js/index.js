@@ -1,4 +1,5 @@
 $().ready(() => {
+    /* =================== Navigation Section Handler =======================*/
     $('ul.parent > li > a').hover(function () {
         $(this).find('ul.child').show(200)
 
@@ -6,6 +7,8 @@ $().ready(() => {
         $(this).find('ul.child').hide(200)
 
     })
+
+    /* =================== Video Player Section Handler =======================*/
 
     $('.play').click(function () {
         if($(this).parent().prev().get(0).paused){
@@ -18,13 +21,14 @@ $().ready(() => {
     });
 
     $('.video').on('ended',function(){
-        // If blur effect needed
+        // If blur effect needed Comment out this code bellow
         // $(this).addClass('blurEffect');
       $('.content').show();
     });
 
 
-    
+    /* =================== Customer Reviwe Section Handler =======================*/
+
     $('.id1').click(function () {
         $(this).addClass('active')
         $('.comments2, .comments3, .comments4, .comments5, .comments6').hide()
@@ -65,12 +69,7 @@ $().ready(() => {
         $('.comments1, .comments3, .comments4, .comments5, .comments2').hide()
         $('.comments6').show()
         $('.id1, .id2, .id3, .id4, .id5').removeClass('active')
-        
     })
-
-
-    
-
 
 })
 

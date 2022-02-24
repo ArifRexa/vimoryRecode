@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@800&display=swap");
+/*===================== Reset Code ==================*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
   font-family: 'Nunito', sans-serif;
 }
 
+/*===================== Banner BackGround ==================*/
 .banner-bg {
   content: "";
   position: absolute;
@@ -22,7 +24,7 @@
 
 /*================== NAVBAR Section ==================*/
 nav {
-  margin-top: 30px;
+  margin-top: 50px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +32,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 7%;
@@ -37,8 +42,8 @@ nav {
 }
 
 nav img {
-  width: 150px;
-  height: 55px;
+  width: 200px;
+  height: 75px;
 }
 
 nav ul.parent {
@@ -66,7 +71,7 @@ nav ul.parent li a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 nav ul.parent li a .drop-down-parent {
@@ -82,13 +87,16 @@ nav ul.parent li a .drop-down-parent .drop-down {
   width: 27px;
   height: 27px;
   margin-left: -3%;
+  margin-top: 5px;
 }
 
 nav ul.parent li a ul.child {
   display: none;
 }
 
+/*===================== Banner Section ==================*/
 .banner {
+  /*===================== Banner Section parant ==================*/
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 60px;
@@ -106,6 +114,7 @@ nav ul.parent li a ul.child {
 }
 
 .banner .bannerTextContainer {
+  /*===================== Banner Text Container ==================*/
   width: 50%;
 }
 
@@ -115,7 +124,11 @@ nav ul.parent li a ul.child {
 }
 
 .banner .bannerTextContainer .bannerText p.heading-des {
-  font-size: 1.1em;
+  font-size: 1.3em;
+}
+
+.banner .bannerTextContainer .cardContainer {
+  /*===================== App and Play store button ==================*/
 }
 
 .banner .bannerTextContainer .cardContainer .mini-card-parent {
@@ -162,6 +175,7 @@ nav ul.parent li a ul.child {
 }
 
 .banner .bannerTab {
+  /*===================== Banner Image ==================*/
   background: -webkit-gradient(linear, left top, right top, color-stop(17%, #3082de), to(#03558b));
   background: linear-gradient(90deg, #3082de 17%, #03558b 100%);
   border-radius: 60% 40% 61% 39% / 59% 56% 44% 41%;
@@ -174,6 +188,7 @@ nav ul.parent li a ul.child {
   margin-top: -40px;
 }
 
+/*===================== Video Section ==================*/
 .video-container {
   margin-top: 20%;
   display: -webkit-box;
@@ -216,6 +231,7 @@ nav ul.parent li a ul.child {
   color: red;
 }
 
+/*===================== Highlight Section ==================*/
 .markingContainer {
   margin-top: 10%;
   margin-left: 7%;
@@ -223,22 +239,22 @@ nav ul.parent li a ul.child {
 }
 
 .markingContainer .fetures-section {
+  /*===================== Highlight Section Heading ==================*/
   margin-bottom: 100px;
 }
 
-.markingContainer .mainHeading {
+.markingContainer .fetures-section .mainHeading {
   font-size: 2.7em;
+  text-align: center;
 }
 
-.markingContainer .slogan {
+.markingContainer .fetures-section .slogan {
   font-size: 1.5em;
-}
-
-.markingContainer .mainHeading, .markingContainer .slogan {
   text-align: center;
 }
 
 .markingContainer .markingSection {
+  /*===================== Highlight Section Contents parent ==================*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +263,10 @@ nav ul.parent li a ul.child {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.markingContainer .markingSection .markingTabBG {
+  /*===================== Highlight Section Image ==================*/
 }
 
 .markingContainer .markingSection .markingTabBG .loveshape {
@@ -261,12 +281,13 @@ nav ul.parent li a ul.child {
 }
 
 .markingContainer .markingSection .markingTabBG .tabcurl {
-  width: 400px;
-  height: 650px;
-  margin-top: -90px;
+  width: 350px;
+  height: 600px;
+  margin-top: -60px;
 }
 
 .markingContainer .markingSection .markingSectionMiniContainer {
+  /*===================== Highlight Section Features ==================*/
   margin-top: 50px;
 }
 
@@ -307,10 +328,17 @@ nav ul.parent li a ul.child {
   font-size: 18px;
 }
 
+/*===================== Pricing Section ==================*/
 .pricing-section {
   margin-top: 160px;
   margin-left: 7%;
   margin-right: 7%;
+  /*===================== Apple and Android Pricing Section ==================*/
+  /*===================== Android Pricing Section ==================*/
+}
+
+.pricing-section .apple-pricing-section, .pricing-section .android-pricing-section {
+  /*===================== Apple and Android Pricing Section ==================*/
 }
 
 .pricing-section .apple-pricing-section .apple-logo, .pricing-section .android-pricing-section .apple-logo {
@@ -385,11 +413,15 @@ nav ul.parent li a ul.child {
 }
 
 .pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h3 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan h1 {
-  font-size: 2em;
+  font-size: 3em;
+}
+
+.pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan p, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan p, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan p, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .plan-heading-container .monthly-plan-heading .monthly-plan p {
+  font-size: 1.5em;
 }
 
 .pricing-section .apple-pricing-section .apple-pricing-card-container .pricing-card .card-content-container, .pricing-section .apple-pricing-section .android-pricing-card-container .pricing-card .card-content-container, .pricing-section .android-pricing-section .apple-pricing-card-container .pricing-card .card-content-container, .pricing-section .android-pricing-section .android-pricing-card-container .pricing-card .card-content-container {
@@ -449,6 +481,7 @@ nav ul.parent li a ul.child {
           justify-content: center;
 }
 
+/*===================== Try Section ==================*/
 .try-now-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,7 +496,7 @@ nav ul.parent li a ul.child {
 .try-now-container .slide-show-container {
   width: 90%;
   height: 170px;
-  border-radius: 110px 7px 110px 7px;
+  border-radius: 100px 7px 100px 7px;
   background: linear-gradient(45deg, #0171bd, #00ccff);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,6 +514,7 @@ nav ul.parent li a ul.child {
 .try-now-container .slide-show-container .slide-text {
   color: white;
   font-size: 1.3em;
+  padding-top: 10px;
 }
 
 .try-now-container .slide-show-container .try-now {
@@ -494,6 +528,7 @@ nav ul.parent li a ul.child {
   padding-top: 12px;
 }
 
+/*===================== Review Section ==================*/
 .review-section {
   margin-left: 7%;
   margin-right: 7%;
@@ -504,6 +539,8 @@ nav ul.parent li a ul.child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*===================== Customer Section ==================*/
+  /*===================== Comment Section ==================*/
 }
 
 .review-section .dashedContainer {
@@ -554,6 +591,10 @@ nav ul.parent li a ul.child {
 .review-section .customerContainer .id5 {
   margin-left: 230px;
   margin-top: -5px;
+}
+
+.review-section .customerContainer .id6 {
+  margin-left: -50px;
 }
 
 .review-section .review {
@@ -672,13 +713,126 @@ nav ul.parent li a ul.child {
   border-radius: 50%;
 }
 
+/*===================== Footer Section ==================*/
 footer {
-  margin: 0;
-  padding: 0;
+  margin-top: 150px;
 }
 
-footer img {
-  position: absolute;
-  margin-bottom: 100px;
+footer .bottomCurve {
+  width: 100%;
+  margin-bottom: -600px;
+  z-index: -1;
+}
+
+footer .footerContainer {
+  margin-top: -180px;
+  /*===================== Footer play store button Section ==================*/
+}
+
+footer .footerContainer .footerHeader {
+  text-align: center;
+  color: white;
+}
+
+footer .footerContainer .footerHeader h1 {
+  font-size: 5.5em;
+}
+
+footer .footerContainer .footerHeader p {
+  font-size: 3.3em;
+}
+
+footer .footerContainer .cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+footer .footerContainer .cardContainer .mini-card-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footerContainer .cardContainer .mini-card-parent button.store-btn {
+  background-color: black;
+  padding: 15px;
+  border: 0;
+  border-radius: 10px;
+  width: 280px;
+  height: 90px;
+  text-align: start;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+footer .footerContainer .cardContainer .mini-card-parent button.store-btn a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerContainer .cardContainer .mini-card-parent button.store-btn a img {
+  margin-right: 10px;
+}
+
+footer .footerContainer .cardContainer .mini-card-parent button.store-btn a p {
+  font-size: 1.4em;
+}
+
+footer .footerContainer .cardContainer .mini-card-parent button.store-btn a h1 {
+  font-size: 2em;
+}
+
+footer .footerContainer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+footer .footerContainer .social-icons i {
+  color: white;
+  font-size: 3.7em;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+footer .footerContainer .endLine {
+  border: 4px solid #0171bd;
+  position: relative;
+  top: 50px;
+  margin-left: 7%;
+  margin-right: 7%;
+  border-radius: 5px;
+}
+
+footer .footerContainer .lastLine {
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */
